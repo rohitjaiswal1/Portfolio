@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Jaiswal | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #fff;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: rgba(13, 17, 23, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            transition: 0.3s;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #1f6feb;
+        }
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,coding') no-repeat center;
+            background-size: cover;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #ccc;
+            max-width: 80%;
+        }
+        .btn {
+            padding: 12px 25px;
+            background: #1f6feb;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #58a6ff;
+        }
+        .section {
+            padding: 60px 5%;
+        }
+        .projects, .skills, .education, .certifications, .internship, .contact {
+            background: #161b22;
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+        .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rohit Jaiswal</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Hi, I'm Rohit Jaiswal</h1>
+        <p>Full-Stack Developer | MERN | AWS Enthusiast</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
+    
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+          <h3>Apna Video Call (Zoom Clone)</h3>
+          <p>Developed a fully functional video calling application similar to Zoom, built using the MERN stack.</p>
+          <p><strong>Technologies Used:</strong> React, Node.js, Express, MongoDB, WebRTC, Socket.IO, JWT, Tailwind CSS</p>
+          <a href="https://apnavideofrontend-dzjj.onrender.com/" class="btn">Live</a>
+          <a href="https://github.com/rohitjaiswal1/Apna-Video-Call" class="btn">Code</a>
+      </div>
+      <div class="project">
+          <h3>Zerodha Clone</h3>
+          <p>Developed a clone of the Zerodha trading platform with real-time data handling and secure authentication.</p>
+          <p><strong>Technologies Used:</strong> React, Node.js, Express.js, MongoDB, WebSockets, JWT, Material-UI</p>
+          <a href="https://zerodha-clone-frontend-vqjq.onrender.com/" class="btn">Live</a>
+          <a href="https://github.com/rohitjaiswal1/Zerodha-Clone" class="btn">Code</a>
+      </div>
+  </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <p><strong>Programming Languages:</strong> Java, Python</p>
+        <p><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React.js, MERN Stack</p>
+        <p><strong>Databases:</strong> MySQL, MongoDB</p>
+        <p><strong>Cloud Computing:</strong> AWS (VPC, EC2, RDS, S3, CloudFront, EFS)</p>
+        <p><strong>CS Fundamentals:</strong> Data Structures & Algorithms, DBMS, OOPs, Networks, Software Engineering</p>
+        <p><strong>Tools:</strong> MySQL Workbench, VS Code, IntelliJ, GitHub, Power BI</p>
+    </section>
+    
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Science & Engineering</strong> - Babu Banarasi Das University (2025)</p>
+        <p><strong>12th Standard:</strong> PCM, 80% - R P J S S M I C Tetari Bazar</p>
+        <p><strong>10th Standard:</strong> Science, 79.33% - R P J S S M I C Tetari Bazar</p>
+    </section>
+    
+    <section id="certifications" class="certifications">
+        <h2>Certifications</h2>
+        <p>Data Analytics using Power BI - Infosys</p>
+        <p>Data Science with Generative AI - Physics Wallah</p>
+        <p>Full Stack Web Development (MERN Stack) - Apna College</p>
+        <p>Data Structures and Algorithms with Java - Physics Wallah</p>
+    </section>
+    
+    <section id="internship" class="internship">
+        <h2>Internship</h2>
+        <p><strong>Web Development Intern</strong> - Prodigy InfoTech (Sep 2024 – Oct 2024)</p>
+        <p>Developed a real-world web project using HTML, CSS, and JavaScript.</p>
+        <p>Gained hands-on experience in front-end development and responsive web design.</p>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <p><a href="https://drive.google.com/file/d/10nAZt-LZ8AMPOO9dIYvq1l-Bxf1QqB2R/view?usp=sharing" target="_blank" class="btn">View Resume</a></p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:rohitjaiswal1679@gmail.com">rohitjaiswal1679@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/rohitjaiswal1" target="_blank">GitHub Profile</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rohitjaiswal12/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+</body>
+</html>
